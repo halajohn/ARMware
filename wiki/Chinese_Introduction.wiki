@@ -253,8 +253,6 @@ http://lh4.google.com/wei.hu.tw/RzxsmLZHyhI/AAAAAAAAAJA/XvEIyAeCiKE/running_9.pn
 
 =螢幕動畫=
 
-下面的螢幕動畫擷取請至下載區.
-
   # [http://armware.googlecode.com/files/start.avi 開機 (啟動 threaded code & dynamic compiler) (divx4 檔)]
   # [http://armware.googlecode.com/files/input.avi 從 serial console 輸入命令 (啟動 threaded code & dynamic compiler) (divx4 檔)]
   # [http://armware.googlecode.com/files/calibrate.avi 矯正 touch panel (沒有啟動 threaded code & dynamic compiler) (divx4 檔)]
