@@ -252,26 +252,10 @@ Terminal
 
 http://lh4.google.com/wei.hu.tw/RzxsmLZHyhI/AAAAAAAAAJA/XvEIyAeCiKE/running_9.png
 
-Movies
+=Movies=
 
-Version 0.4.0:
-
-Booting process (Enabled the threaded code engine & dynamic compiler) (divx4)
-
-Input commands to serial console (Enable the threaded code engine & dynamic compiler) (divx4)
-
-Version 0.1.0:
-
-Calibrate the touch panel (Disabled the threaded code engine & dynamic compiler) (divx4)
-
-Input personal information (Disabled the threaded code engine & dynamic compiler) (divx4)
-
-Tetris game (Disabled the threaded code engine & dynamic compiler) (divx4)
-
-Downloads
-
-Debian Package (version 0.5.0)
-Redhat Package (version 0.5.0)
-bootldr.bin
-root.bin
-kernel patch for 2.4.19-rmk6-pxa1-hh30
+  # Booting process (Enabled the threaded code engine & dynamic compiler) (divx4)
+  # Input commands to serial console (Enable the threaded code engine & dynamic compiler) (divx4)
+  # Calibrate the touch panel (Disabled the threaded code engine & dynamic compiler) (divx4)
+  # Input personal information (Disabled the threaded code engine & dynamic compiler) (divx4)
+  # Tetris game (Disabled the threaded code engine & dynamic compiler) (divx4)
