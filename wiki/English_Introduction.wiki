@@ -129,7 +129,6 @@ ARMware includes a main program, several libraries, and several pictures which A
 
   * Hardware: Pentium M or Pentium 4 (Because ARMware needs MMX & SSE2 instruction sets)
   * Library: Because ARMware is written by the assembly lanauge and pure C++ language, and compiled by the GNU C++ Compiler 4.0. Thus, if you want to run ARMware, you will need:
-
     * libc6 (>= 2.3.5)
     * libgcc1 (>= 4.0.0)
     * gtkmm (>= 2.4)
@@ -145,7 +144,7 @@ As far as I know, debian stable, testing, and unstable release, and ubuntu hoary
 
 Because of the quality of the touch panel in iPaq is not good, linux kernel will discard the user input axis data at first time. However, because ARMware is a software emulator, linux kernel doesn't need this strange behavior. Thus, I modify parts of the linux kernel source, including touch panel revising and increasing the console log level such that every kernel messages will be printed to the serial console.
 
-If you want to execute ARMware and compile your own linux kernel, you have to go to the download area to download this kernel patch.
+If you want to execute ARMware and compile your own linux kernel, you have to download this [http://armware.googlecode.com/files/kernel-patch.patch kernel patch].
 
 Note: This kernel patch is for kernel version 2.4.19-rmk6-pxa1-hh30.
 
@@ -153,8 +152,8 @@ Note: This kernel patch is for kernel version 2.4.19-rmk6-pxa1-hh30.
 
 All of the following files can be downloaded from the download area at the bottom.
 
-  # Download the ARMware debian package and install it.
-  # Download bootldr.bin and root.bin, and put them into a directory.
+  # Install ARMware.
+  # Download [http://armware.googlecode.com/files/bootldr.bin bootldr.bin] and [http://armware.googlecode.com/files/root.bin root.bin], and put them into a directory.
   # Execute armware.
   # In the "Machine Name" window at the right hand side, press the mouse right button and select "New".
   # Enter the machine name you wanted in the "Basic Information" tab.
@@ -254,8 +253,8 @@ http://lh4.google.com/wei.hu.tw/RzxsmLZHyhI/AAAAAAAAAJA/XvEIyAeCiKE/running_9.pn
 
 =Movies=
 
-  # Booting process (Enabled the threaded code engine & dynamic compiler) (divx4)
-  # Input commands to serial console (Enable the threaded code engine & dynamic compiler) (divx4)
-  # Calibrate the touch panel (Disabled the threaded code engine & dynamic compiler) (divx4)
-  # Input personal information (Disabled the threaded code engine & dynamic compiler) (divx4)
-  # Tetris game (Disabled the threaded code engine & dynamic compiler) (divx4)
+  # [http://armware.googlecode.com/files/start.avi Booting process (Enabled the threaded code engine & dynamic compiler) (divx4)]
+  # [http://armware.googlecode.com/files/input.avi Input commands to serial console (Enable the threaded code engine & dynamic compiler) (divx4)]
+  # [http://armware.googlecode.com/files/calibrate.avi Calibrate the touch panel (Disabled the threaded code engine & dynamic compiler) (divx4)]
+  # [http://armware.googlecode.com/files/personal.avi Input personal information (Disabled the threaded code engine & dynamic compiler) (divx4)]
+  # [http://armware.googlecode.com/files/tetris.avi Tetris game (Disabled the threaded code engine & dynamic compiler) (divx4)]
