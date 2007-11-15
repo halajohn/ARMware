@@ -257,12 +257,10 @@ http://lh4.google.com/wei.hu.tw/RzxsmLZHyhI/AAAAAAAAAJA/XvEIyAeCiKE/running_9.pn
 
 =螢幕動畫=
 
-開機 (啟動 threaded code & dynamic compiler) (divx4 檔)
+下面的螢幕動畫擷取請至下載區.
 
-從 serial console 輸入命令 (啟動 threaded code & dynamic compiler) (divx4 檔)
-
-矯正 touch panel (沒有啟動 threaded code & dynamic compiler) (divx4 檔)
-
-輸入個人資料 (沒有啟動 threaded code & dynamic compiler) (divx4 檔)
-
-俄羅斯方塊 (沒有啟動 threaded code & dynamic compiler) (divx4 檔)
+  # 開機 (啟動 threaded code & dynamic compiler) (divx4 檔)
+  # 從 serial console 輸入命令 (啟動 threaded code & dynamic compiler) (divx4 檔)
+  # 矯正 touch panel (沒有啟動 threaded code & dynamic compiler) (divx4 檔)
+  # 輸入個人資料 (沒有啟動 threaded code & dynamic compiler) (divx4 檔)
+  # 俄羅斯方塊 (沒有啟動 threaded code & dynamic compiler) (divx4 檔)
