@@ -122,6 +122,8 @@ ARMware 是個類似 VMware 或 Bochs 的硬體平台模擬器, 不過相對於 
 
 =架構圖=
 
+http://lh4.google.com/wei.hu.tw/RzxreLZHyQI/AAAAAAAAAG4/WmNpG5AS4RM/arch.png
+
 =套件內容=
 
 ARMware 除了包含一個主程式執行檔外, 還有執行所需的函式庫, 以及數張 ARMware 所需用到的圖檔, 以及兩個繁體中文的 locale 檔.
@@ -167,47 +169,91 @@ ARMware 除了包含一個主程式執行檔外, 還有執行所需的函式庫,
 
 使用者可以自行調整模擬環境的記憶體大小
 
+http://lh4.google.com/wei.hu.tw/Rzxr9LZHyVI/AAAAAAAAAHg/o4tccVgd9DQ/dram_size_modify.png
+
 在調整完記憶體大小之後, ARM linux kernel 確實偵測到較大的記憶體容量
+
+http://lh4.google.com/wei.hu.tw/Rzxr9LZHyWI/AAAAAAAAAHo/MyfvSSxAtRI/dram_size_prove.png
 
 使用者可以自行為 serial console 修改喜好的字型, 文字顏色, 以及背景顏色
 
+http://lh5.google.com/wei.hu.tw/RzxsmbZHyiI/AAAAAAAAAJI/r822uZu8SX8/serial_console_modify.png
+
 最新的 serial console 可以正確的顯示 ANSI 顏色碼
+
+http://lh5.google.com/wei.hu.tw/Rzxs7bZHyjI/AAAAAAAAAJQ/Ld5f2DdNctw/serial_console_prove.png
 
 ARMware 可以使用 GNU dbm (gdbm) 來當做機器資料庫
 
+http://lh4.google.com/wei.hu.tw/Rzxr9LZHyXI/AAAAAAAAAHw/f6nxG63su2o/gdbm.png
+
 ARMware 可以使用 xml 檔案來當做機器資料庫
+
+http://lh5.google.com/wei.hu.tw/Rzxs7bZHylI/AAAAAAAAAJg/5lelIYJqdAg/xml.png
 
 使用 Qt 介面
 
+http://lh5.google.com/wei.hu.tw/Rzxr9bZHyYI/AAAAAAAAAH4/tuNRJac5XKI/qt_running_1.png
+
 使用 Gtk 介面
+
+http://lh5.google.com/wei.hu.tw/Rzxs7bZHykI/AAAAAAAAAJY/9qAz-7Dj6X4/start.png
 
 關於設計者 (Gtk 介面)
 
+http://lh5.google.com/wei.hu.tw/RzxrdbZHyPI/AAAAAAAAAGw/Jp9Brx8tXGs/about.png
+
 選項清單 (Gtk 介面)
+
+http://lh3.google.com/wei.hu.tw/Rzxr87ZHyUI/AAAAAAAAAHY/SPZbsg8y34E/conf.png
 
 正在燒錄 Flash ROM (Gtk 介面)
 
+http://lh5.google.com/wei.hu.tw/RzxrebZHySI/AAAAAAAAAHI/dwxk-8iMo_Q/burning.png
+
 燒錄完成 (Gtk 介面)
+
+http://lh5.google.com/wei.hu.tw/RzxrebZHyTI/AAAAAAAAAHQ/L1OxBg8tpWA/burning_done.png
 
 一開機執行到 boot loader 的情況 (Gtk 介面)
 
+http://lh5.google.com/wei.hu.tw/RzxrebZHyRI/AAAAAAAAAHA/RQhd0VVl69w/bootldr.png
+
 載入 linux kernel, 並且解壓縮完成 (Gtk 介面)
+
+http://lh6.google.com/wei.hu.tw/RzxsTrZHyZI/AAAAAAAAAIA/xIagMFCoh-4/running_1.png
 
 kernel 執行完成, 開始執行 /sbin/init (Gtk 介面)
 
+http://lh3.google.com/wei.hu.tw/RzxsT7ZHyaI/AAAAAAAAAII/lsikEbuDcIA/running_2.png
+
 進入到 GUI 畫面, 矯正 touch panel (Gtk 介面)
+
+http://lh3.google.com/wei.hu.tw/RzxsT7ZHybI/AAAAAAAAAIQ/zfqfHiiBCCk/running_3.png
 
 gpe 的初始畫面 1
 
+http://lh3.google.com/wei.hu.tw/RzxsT7ZHycI/AAAAAAAAAIY/HyVkcmGJCus/running_4.png
+
 gpe 的初始畫面 2
+
+http://lh3.google.com/wei.hu.tw/RzxsT7ZHydI/AAAAAAAAAIg/PiAUZY0-jJo/running_5.png
 
 gpe 的歡迎畫面
 
+http://lh4.google.com/wei.hu.tw/RzxsmLZHyeI/AAAAAAAAAIo/mVVochyRWLA/running_6.png
+
 俄羅斯方塊遊戲
+
+http://lh4.google.com/wei.hu.tw/RzxsmLZHyfI/AAAAAAAAAIw/oDFaoG9Ps_Q/running_7.png
 
 迷宮遊戲
 
+http://lh4.google.com/wei.hu.tw/RzxsmLZHygI/AAAAAAAAAI4/5eeVXxohMCY/running_8.png
+
 Terminal
+
+http://lh4.google.com/wei.hu.tw/RzxsmLZHyhI/AAAAAAAAAJA/XvEIyAeCiKE/running_9.png
 
 =螢幕動畫=
 
