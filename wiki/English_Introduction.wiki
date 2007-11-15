@@ -85,7 +85,6 @@ The hardware components that ARMware can emulate for now are:
 
   * ARMware has a build-in threaded code engine which will cache an EBB (extended basic block) of ARM codes, so that it can increase the execuation speed.
   * Further more, ARMware has a build-in dynamic compiler which will translate an EBB of ARM codes into a block of x86 machine codes, so that it can increase the runtime preformance dramatically. The optimization technologies implemented in this dynamic compiler include:
-
     * Redundant condition code calculation elimination
     * Global grouping conditional execuating instruction
     * Redundant jump elimination
@@ -95,14 +94,6 @@ The hardware components that ARMware can emulate for now are:
     * Global redundany memory operation elimination
     * Algebraic canonicalization
     * Global SSA form based linear scan register allocation
-
-==Execuation flow paths==
-
-    # If ARMware meets with an EBB which it didn't execuate before, ARMware will use the build-in interpreter to interpret that block of ARM codes.
-    # Through the build-in profiler, ARMware will decide which block should be optimized by the build-in threaded-code engine. Then the build-in threaded-code engine will translate that EBB into threaded codes.
-    # If ARMware meets that threaded-coded EBB again, it will use the threaded codes to execute that block of ARM codes. In the execuating, however, if it jumps to an un-threaded-coded EBB, ARMware will fall back to the interpreter mode to interpret it.
-    # Again, through the build-in profiler, ARMware will further decide which block should be dynamically compiled. Then the build-in dynamic compiler will compile that block into x86 machine codes.
-    # If ARMware meets that dynamically-compiled EBB again, it will use the x86 machine codes to execuating that block of ARM codes. In the execuating, however, if it jumps to an un-dynamically compiled EBB, ARMware will fall back to the interpreter or threaded-code mode to execuate it.
   * In addition, I use assembly codes to re-write some parts of ARMware to increase the run-time performance:
     * I use MMX and SSE2 instructions to accomplish the rotation of the LCD screen of HP iPaq by an angle of 270 degrees (That is to say, you have to execute ARMware on a CPU with MMX and SSE2 instruction sets, like Pentium M or Pentium 4).
     * I also use x86 assembly codes to accomplish the condition codes calculation in the ARM processor.
@@ -114,6 +105,13 @@ The hardware components that ARMware can emulate for now are:
   * Contains a full functional utility to burn a new Flash ROM (Screenshot), which can be used to emulate the burning operations in the real world, and you can use the new created flash rom to start ARMware.
   * Every user's machine database is placed under their home directory. Thus different users can have different machine database.
 
+=Execuation flow paths=
+
+    # If ARMware meets with an EBB which it didn't execuate before, ARMware will use the build-in interpreter to interpret that block of ARM codes.
+    # Through the build-in profiler, ARMware will decide which block should be optimized by the build-in threaded-code engine. Then the build-in threaded-code engine will translate that EBB into threaded codes.
+    # If ARMware meets that threaded-coded EBB again, it will use the threaded codes to execute that block of ARM codes. In the execuating, however, if it jumps to an un-threaded-coded EBB, ARMware will fall back to the interpreter mode to interpret it.
+    # Again, through the build-in profiler, ARMware will further decide which block should be dynamically compiled. Then the build-in dynamic compiler will compile that block into x86 machine codes.
+    # If ARMware meets that dynamically-compiled EBB again, it will use the x86 machine codes to execuating that block of ARM codes. In the execuating, however, if it jumps to an un-dynamically compiled EBB, ARMware will fall back to the interpreter or threaded-code mode to execuate it.
 =Shortcoming=
 
   # Doesn't support network.
@@ -121,6 +119,7 @@ The hardware components that ARMware can emulate for now are:
 
 =Architecture Graph=
 
+http://lh4.google.com/wei.hu.tw/RzxreLZHyQI/AAAAAAAAAG4/WmNpG5AS4RM/arch.png
 
 =Packet Content=
 
@@ -165,53 +164,93 @@ All of the following files can be downloaded from the download area at the botto
 
 =Screenshots=
 
-Version 0.5.0:
-
 Users can modify the memory size for the emulated environment
+
+http://lh4.google.com/wei.hu.tw/Rzxr9LZHyVI/AAAAAAAAAHg/o4tccVgd9DQ/dram_size_modify.png
 
 After the DRAM size modifying, ARM linux kernel indeed detects larger memory size
 
+http://lh4.google.com/wei.hu.tw/Rzxr9LZHyWI/AAAAAAAAAHo/MyfvSSxAtRI/dram_size_prove.png
+
 Users can choose their favorite font, text color, and background color used for the serial console
+
+http://lh4.google.com/wei.hu.tw/Rzxr9LZHyWI/AAAAAAAAAHo/MyfvSSxAtRI/dram_size_prove.png
 
 The new version serial console can support the ANSI color codes
 
-Version 0.1.0:
+http://lh5.google.com/wei.hu.tw/Rzxs7bZHyjI/AAAAAAAAAJQ/Ld5f2DdNctw/serial_console_prove.png
 
 ARMware can use GNU dbm (gdbm) as its machine database
 
+http://lh4.google.com/wei.hu.tw/Rzxr9LZHyXI/AAAAAAAAAHw/f6nxG63su2o/gdbm.png
+
 ARMware can use xml as its machine database
+
+http://lh5.google.com/wei.hu.tw/Rzxs7bZHylI/AAAAAAAAAJg/5lelIYJqdAg/xml.png
 
 Using Qt as its user interface
 
+http://lh5.google.com/wei.hu.tw/Rzxr9bZHyYI/AAAAAAAAAH4/tuNRJac5XKI/qt_running_1.png
+
 Using Gtk as its user interface
+
+http://lh5.google.com/wei.hu.tw/Rzxs7bZHykI/AAAAAAAAAJY/9qAz-7Dj6X4/start.png
 
 About the designer (Gtk interface)
 
+http://lh5.google.com/wei.hu.tw/RzxrdbZHyPI/AAAAAAAAAGw/Jp9Brx8tXGs/about.png
+
 Configuration menu (Gtk interface)
+
+http://lh3.google.com/wei.hu.tw/Rzxr87ZHyUI/AAAAAAAAAHY/SPZbsg8y34E/conf.png
 
 Burning Flash ROM (Gtk interface)
 
+http://lh5.google.com/wei.hu.tw/RzxrebZHySI/AAAAAAAAAHI/dwxk-8iMo_Q/burning.png
+
 Burning done (Gtk interface)
+
+http://lh5.google.com/wei.hu.tw/RzxrebZHyTI/AAAAAAAAAHQ/L1OxBg8tpWA/burning_done.png
 
 Booting to boot loader (Gtk interface)
 
+http://lh5.google.com/wei.hu.tw/RzxrebZHyRI/AAAAAAAAAHA/RQhd0VVl69w/bootldr.png
+
 Linux kernel is loaded, and un-compressed (Gtk interface)
+
+http://lh6.google.com/wei.hu.tw/RzxsTrZHyZI/AAAAAAAAAIA/xIagMFCoh-4/running_1.png
 
 Execuating kernel, and starting to run /sbin/init (Gtk interface)
 
+http://lh3.google.com/wei.hu.tw/RzxsT7ZHyaI/AAAAAAAAAII/lsikEbuDcIA/running_2.png
+
 Entering GUI, calibrate touch panel (Gtk interface)
+
+http://lh3.google.com/wei.hu.tw/RzxsT7ZHybI/AAAAAAAAAIQ/zfqfHiiBCCk/running_3.png
 
 gpe initialization screen 1
 
+http://lh3.google.com/wei.hu.tw/RzxsT7ZHycI/AAAAAAAAAIY/HyVkcmGJCus/running_4.png
+
 gpe initialization screen 2
+
+http://lh3.google.com/wei.hu.tw/RzxsT7ZHydI/AAAAAAAAAIg/PiAUZY0-jJo/running_5.png
 
 gpe welcome screen
 
+http://lh4.google.com/wei.hu.tw/RzxsmLZHyeI/AAAAAAAAAIo/mVVochyRWLA/running_6.png
+
 Tetris game
+
+http://lh4.google.com/wei.hu.tw/RzxsmLZHyfI/AAAAAAAAAIw/oDFaoG9Ps_Q/running_7.png
 
 Maze game
 
+http://lh4.google.com/wei.hu.tw/RzxsmLZHygI/AAAAAAAAAI4/5eeVXxohMCY/running_8.png
+
 Terminal
+
+http://lh4.google.com/wei.hu.tw/RzxsmLZHyhI/AAAAAAAAAJA/XvEIyAeCiKE/running_9.png
 
 Movies
 
