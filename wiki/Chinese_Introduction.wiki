@@ -144,7 +144,7 @@ ARMware 除了包含一個主程式執行檔外, 還有執行所需的函式庫,
 
 由於 iPaq 的 touch panel 品質不是很好, 因此 Linux kernel 會捨棄掉第一次按下 touch panel 所獲得的 (x, y) 值. 但是 ARMware 是個軟體模擬器, 因此不需要 Linux kernel 的這個動作. 所以我修改了 Linux kernel 的一些 codes, 包括上述的 touch panel 問題以及讓 kernel message 傾印到 serial console 中.
 
-如果你想要執行 ARMware 並且自行編譯 Linux kernel 的話, 你就必須要下載這個 kernel patch. (請至下載區下載)
+如果你想要執行 ARMware 並且自行編譯 Linux kernel 的話, 你就必須要下載這個 [http://armware.googlecode.com/files/kernel-patch.patch kernel patch].
 
 註: 這個 kernel patch 是 for kernel 的 2.4.19-rmk6-pxa1-hh30 版本.
 
@@ -153,7 +153,7 @@ ARMware 除了包含一個主程式執行檔外, 還有執行所需的函式庫,
 以下所有的檔案都可以從下面的 下載區 中下載.
 
   # 下載 ARMware Debian package 並且安裝好.
-  # 下載 bootldr.bin 以及 root.bin, 並且放到某一個目錄下.
+  # 下載 [http://armware.googlecode.com/files/bootldr.bin bootldr.bin] 以及 [http://armware.googlecode.com/files/root.bin root.bin], 並且放到某一個目錄下.
   # 執行 armware
   # 在右邊的 "機器名稱" 視窗中, 按下滑鼠右鍵, 選擇 "新增".
   # 在 "基本資訊" 中, 填入你想要的機器名稱.
@@ -256,7 +256,7 @@ http://lh4.google.com/wei.hu.tw/RzxsmLZHyhI/AAAAAAAAAJA/XvEIyAeCiKE/running_9.pn
 下面的螢幕動畫擷取請至下載區.
 
   # 開機 (啟動 threaded code & dynamic compiler) (divx4 檔)
-  # 從 serial console 輸入命令 (啟動 threaded code & dynamic compiler) (divx4 檔)
-  # 矯正 touch panel (沒有啟動 threaded code & dynamic compiler) (divx4 檔)
+  # [http://armware.googlecode.com/files/input.avi 從 serial console 輸入命令 (啟動 threaded code & dynamic compiler) (divx4 檔)]
+  # [http://armware.googlecode.com/files/calibrate.avi 矯正 touch panel (沒有啟動 threaded code & dynamic compiler) (divx4 檔)]
   # [http://armware.googlecode.com/files/personal.avi 輸入個人資料 (沒有啟動 threaded code & dynamic compiler) (divx4 檔)]
   # 俄羅斯方塊 (沒有啟動 threaded code & dynamic compiler) (divx4 檔)
