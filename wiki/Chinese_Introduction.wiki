@@ -83,7 +83,6 @@ ARMware 是個類似 VMware 或 Bochs 的硬體平台模擬器, 不過相對於 
 
   * 內建一個 threaded code engine, 會把執行過的 ARM machine code 給 cache 起來, 因此可以加快執行的速度.
   * 並且更內建一個 dynamic compiler (動態編譯器), 這個 compiler 會動態的把 ARM 的 machine code 編譯成 x86 的 machine code, 因此可以加快執行的速度. 目前實作在這個 dynamic compiler 的最佳化技術總計有下列數項:
-
     * Redundant condition code calculation elimination
     * Global grouping conditional execuating instruction
     * Redundant jump elimination
@@ -93,6 +92,16 @@ ARMware 是個類似 VMware 或 Bochs 的硬體平台模擬器, 不過相對於 
     * Global redundany memory operation elimination
     * Algebraic canonicalization
     * Global SSA form based linear scan register allocation
+  * 除此之外, 我也以 x86 assembly codes 重寫了 ARMware 的某些部份, 希望能夠更加快執行的速度:
+    # 我完全以 Intel 的 MMX 及 SSE2 指令集來完成在 HP iPaq 上的 LCD 旋轉 270 度的動作 (這也就是說, 你必須在一台具備 MMX 及 SSE2 指令集的 x86 CPU 上來執行 ARMware, 例如 Pentium M 以及 Pentium 4).
+    # 我也以 x86 assembly codes 來最佳化 ARM 平台的 condition codes 計算.
+  * 內建一個記憶體管理子系統, 並且經過冗常的測試, ARMware 縱使在加入 dynamic compiler 功能的情況下也幾乎沒有 memory leak 的情形.
+  * 具有 Qt (螢幕快照) 或 Gtk (螢幕快照) 的使用者介面, 但由於 Qt 的 license 問題, 所以目前我只釋放出以 Gtk 為使用者介面的 ARMware.
+  * 具備一個 serial console 視窗 (螢幕動畫), 因此可以從該視窗中看到 ARMware 的 serial console 輸出, 同時也可以從該視窗中輸入使用者命令.
+  * 可以使用 GNU dbm (螢幕快照) 或 xml (螢幕快照) 為機器資料的資料庫. 但同樣的, 由於 GNU dbm 的 license 問題, 所以我目前只釋放出以 xml 為機器資料庫的 ARMware.
+  * 符合 i18n 標準的繁體中文化介面, 目前的繁體中文翻譯有 Big5 以及 UTF-8.
+  * 具備一個完整的模擬燒錄 Flash ROM 工具(螢幕快照), 可用來模擬真實世界中的燒錄 Flash 動作, 並且使用燒錄出來的 Flash ROM 檔案來啟動 ARMware.
+  * 每個使用者的機器資料庫分別存放在使用者個家目錄中, 因此不同使用者可以擁有各自的機器資料庫而不會衝突.
 
 =ARMware 執行流程=
 
@@ -101,19 +110,6 @@ ARMware 是個類似 VMware 或 Bochs 的硬體平台模擬器, 不過相對於 
   # 在產生 threaded codes 之後, 當 ARMware 再度碰到這塊 EBB 時, 就會使用新產生的 threaded codes 去解釋這個 EBB. 如果在執行 threaded codes 的時候, 跳到一個還沒被 threaded code 化的 EBB 時, ARMware 就回到 interpreter 模式去解釋.
   # 再經由 ARMware 內建的 profiler 來決定那些 EBB 值得被 dynamic-compiled 化, 並且將該 EBB 餵給 ARMware 內建的 dynamic compiler engine 來產生相對於該 EBB 的 x86 machine codes.
   # 在產生 x96 machine codes 之後, 當 ARMware 再度碰到這塊 EBB 時, 就會使用新產生的 x86 machine codes 來解釋這個 EBB. 如果在執行這段 x86 machine codes 的過程中, 碰到一個還沒被 dynamic compiled 的 EBB, 就會回到原始的 interpreter 模式或是先前的 threaded code 模式去解釋.
-
-  * 除此之外, 我也以 x86 assembly codes 重寫了 ARMware 的某些部份, 希望能夠更加快執行的速度:
-
-    # 我完全以 Intel 的 MMX 及 SSE2 指令集來完成在 HP iPaq 上的 LCD 旋轉 270 度的動作 (這也就是說, 你必須在一台具備 MMX 及 SSE2 指令集的 x86 CPU 上來執行 ARMware, 例如 Pentium M 以及 Pentium 4).
-    # 我也以 x86 assembly codes 來最佳化 ARM 平台的 condition codes 計算.
-
-  * 內建一個記憶體管理子系統, 並且經過冗常的測試, ARMware 縱使在加入 dynamic compiler 功能的情況下也幾乎沒有 memory leak 的情形.
-  * 具有 Qt (螢幕快照) 或 Gtk (螢幕快照) 的使用者介面, 但由於 Qt 的 license 問題, 所以目前我只釋放出以 Gtk 為使用者介面的 ARMware.
-  * 具備一個 serial console 視窗 (螢幕動畫), 因此可以從該視窗中看到 ARMware 的 serial console 輸出, 同時也可以從該視窗中輸入使用者命令.
-  * 可以使用 GNU dbm (螢幕快照) 或 xml (螢幕快照) 為機器資料的資料庫. 但同樣的, 由於 GNU dbm 的 license 問題, 所以我目前只釋放出以 xml 為機器資料庫的 ARMware.
-  * 符合 i18n 標準的繁體中文化介面, 目前的繁體中文翻譯有 Big5 以及 UTF-8.
-  * 具備一個完整的模擬燒錄 Flash ROM 工具(螢幕快照), 可用來模擬真實世界中的燒錄 Flash 動作, 並且使用燒錄出來的 Flash ROM 檔案來啟動 ARMware.
-  * 每個使用者的機器資料庫分別存放在使用者個家目錄中, 因此不同使用者可以擁有各自的機器資料庫而不會衝突.
 
 =缺點=
 
@@ -262,5 +258,5 @@ http://lh4.google.com/wei.hu.tw/RzxsmLZHyhI/AAAAAAAAAJA/XvEIyAeCiKE/running_9.pn
   # 開機 (啟動 threaded code & dynamic compiler) (divx4 檔)
   # 從 serial console 輸入命令 (啟動 threaded code & dynamic compiler) (divx4 檔)
   # 矯正 touch panel (沒有啟動 threaded code & dynamic compiler) (divx4 檔)
-  # 輸入個人資料 (沒有啟動 threaded code & dynamic compiler) (divx4 檔)
+  # [http://armware.googlecode.com/files/personal.avi 輸入個人資料 (沒有啟動 threaded code & dynamic compiler) (divx4 檔)]
   # 俄羅斯方塊 (沒有啟動 threaded code & dynamic compiler) (divx4 檔)
