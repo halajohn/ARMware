@@ -152,7 +152,7 @@ ARMware 除了包含一個主程式執行檔外, 還有執行所需的函式庫,
 
 以下所有的檔案都可以從下面的 下載區 中下載.
 
-  # 下載 ARMware Debian package 並且安裝好.
+  # 安裝好 ARMware.
   # 下載 [http://armware.googlecode.com/files/bootldr.bin bootldr.bin] 以及 [http://armware.googlecode.com/files/root.bin root.bin], 並且放到某一個目錄下.
   # 執行 armware
   # 在右邊的 "機器名稱" 視窗中, 按下滑鼠右鍵, 選擇 "新增".
@@ -255,8 +255,8 @@ http://lh4.google.com/wei.hu.tw/RzxsmLZHyhI/AAAAAAAAAJA/XvEIyAeCiKE/running_9.pn
 
 下面的螢幕動畫擷取請至下載區.
 
-  # 開機 (啟動 threaded code & dynamic compiler) (divx4 檔)
+  # [http://armware.googlecode.com/files/start.avi 開機 (啟動 threaded code & dynamic compiler) (divx4 檔)]
   # [http://armware.googlecode.com/files/input.avi 從 serial console 輸入命令 (啟動 threaded code & dynamic compiler) (divx4 檔)]
   # [http://armware.googlecode.com/files/calibrate.avi 矯正 touch panel (沒有啟動 threaded code & dynamic compiler) (divx4 檔)]
   # [http://armware.googlecode.com/files/personal.avi 輸入個人資料 (沒有啟動 threaded code & dynamic compiler) (divx4 檔)]
-  # 俄羅斯方塊 (沒有啟動 threaded code & dynamic compiler) (divx4 檔)
+  # [http://armware.googlecode.com/files/tetris.avi 俄羅斯方塊 (沒有啟動 threaded code & dynamic compiler) (divx4 檔)]
