@@ -2,12 +2,9 @@
 
   * 整體架構部份: 模組化架構, 把不同的機器型號所獨有的功能以模組的方式切割出去, 這樣可以達到同時支援多種機器的功能, 又不會降低執行時期的效率. 這個模組化的架構對於未來支援多種機器型號有著重大的影響.
   * Serial Console 部份:
-    * 使用者可以為 serial console 選擇喜愛的字型, 文字顏色, 以及背景顏色.
-    * Serial console 新增支援 ANSI 顏色碼的功能.
     * 可以從 serial console 輸入.
-  * 模擬環境部份: 使用者可以調整模擬環境的記憶體大小, 並且由於不同的機器型號有不同的最大記憶體容量限制, 因此 ARMware 也會為此做出相對應的調整.
-    * Xscale 處理器的支援正在開發中, 而整體的執行環境以 HP iPaq H5500 為目標模擬平台.
-    * 完成 ARM Architecture version 4, 5 Instruction Set 的模擬.
+  * 模擬環境部份:
+    * 完成 ARM Architecture version 4 Instruction Set 的模擬.
     * 具備 dynamic compiler 技術.
     * 具備 threaded code 最佳化技術.
 
