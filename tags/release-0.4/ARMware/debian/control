@@ -1,0 +1,13 @@
+Source: armware
+Section: devel
+Priority: extra
+Maintainer: Wei Hu <wei.hu.tw@gmail.com>
+Build-Depends: debhelper (>= 4.0.0)
+Standards-Version: 3.6.0
+
+Package: armware
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: This is an ARM emulator
+ ARMware is an ARM emulator. For now, it can only emulate
+ Intel StrongARM SA-1110 CPU and the Compaq iPaq H3600.

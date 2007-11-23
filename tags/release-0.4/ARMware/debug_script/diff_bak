@@ -1,0 +1,21 @@
+#!/bin/sh
+echo "...checking armware_log$10"
+diff armware_log$10 backup/armware_log$10 > ddd0
+echo "...checking armware_log$11"
+diff armware_log$11 backup/armware_log$11 > ddd1
+echo "...checking armware_log$12"
+diff armware_log$12 backup/armware_log$12 > ddd2
+echo "...checking armware_log$13"
+diff armware_log$13 backup/armware_log$13 > ddd3
+echo "...checking armware_log$14"
+diff armware_log$14 backup/armware_log$14 > ddd4
+echo "...checking armware_log$15"
+diff armware_log$15 backup/armware_log$15 > ddd5
+echo "...checking armware_log$16"
+diff armware_log$16 backup/armware_log$16 > ddd6
+echo "...checking armware_log$17"
+diff armware_log$17 backup/armware_log$17 > ddd7
+echo "...checking armware_log$18"
+diff armware_log$18 backup/armware_log$18 > ddd8
+echo "...checking armware_log$19"
+diff armware_log$19 backup/armware_log$19 > ddd9
