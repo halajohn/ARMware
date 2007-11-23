@@ -1,16 +1,9 @@
 =Feature=
-  * For the architecture:
-    * Modularization. ARMware now splits up into several modules which are specifically designed for particular functions for different machine types. Through this modularization, ARMware not only can support more machine types, but also don't reduce the runtime performance. This modularization architecture has an important influence on the support for multiple machine types.
+
   * For the Serial Console
     * You can input commands in the serial console.
-    * I modify the codes for the serial console, so that the runtime display speed of the serial console is improved.
-    * Users can choose their favorite font, text color, and background color for the serial console..
-    * ARMware now support the ANSI color codes in the serial console.
   * For the emulated environment
-    * Users can modify the DRAM size of the emulated environment. Different machines have different maximum DRAM sizes, so that ARMware will adjust the maximum DRAM size according to the machine type users choosed. (Screenshot 1) (Screenshot 2).
-    * The function of the power off button is completed. Through pressing this button, users can stop the execuation of the emulated environment.
-    * The support for the Intel Xscale processor is been developping, and the whole emulated environment for the Xscale will be the HP iPaq H5500.
-    * ARMware now can emulate the ARM architecture version 4, 5 Instruction Set.
+    * ARMware now can emulate the ARM architecture version 4 Instruction Set.
     * Add a dynamic compiler.
     * Add a threaded code optimization technology.
 
@@ -20,7 +13,7 @@ ARMware, like VMware or Bochs, is an emulator for a hardware platform. Opposite 
 
 The hardware components that ARMware can emulate for now are:
 
-  * ARM architecture version 5 core
+  * ARM architecture version 4 core
     * Supports all kinds of ARM instruction set (but does not support Thumb instruction set)
     * Supports all processor mode:
       * User mode
