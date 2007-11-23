@@ -15,7 +15,7 @@ ARMware 是個類似 VMware 或 Bochs 的硬體平台模擬器, 不過相對於 
 
 目前 ARMware 所模擬的元件包括:
 
-  * ARM architecture version 5 core
+  * ARM architecture version 4 core
     * 支援所有的 ARM instruction set (但不支援 Thumb instruction set)
     * 支援所有的 processor mode:
       * User mode
