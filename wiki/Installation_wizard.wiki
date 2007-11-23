@@ -1,15 +1,11 @@
 =================================================================================
 
-Installation Wizard
-
 ==Win32==
 
 In the "installwizard" subdirectory, I put a file named "create.nsi".
 Using this file with NSIS, you can create an installation wizard.
 
 =================================================================================
-
-安裝精靈
 
 ==Win32==
 
