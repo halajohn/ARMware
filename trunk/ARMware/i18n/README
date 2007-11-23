@@ -1,0 +1,11 @@
+1) xgettext ../../src/Gtk/*.cpp ../../src/Gtk/*.hpp
+
+... generating messages.po
+
+2) msgmerge armware.po messages.po > ddd.po
+
+3) delete armware.po messages.po
+
+4) rename ddd.po to armware.po
+
+5) modify areware.po

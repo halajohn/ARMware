@@ -1,0 +1,21 @@
+#!/bin/sh
+echo "...checking armware_log$10"
+grep -nr "opt" armware_log$10
+echo "...checking armware_log$11"
+grep -nr "opt" armware_log$11
+echo "...checking armware_log$12"
+grep -nr "opt" armware_log$12
+echo "...checking armware_log$13"
+grep -nr "opt" armware_log$13
+echo "...checking armware_log$14"
+grep -nr "opt" armware_log$14
+echo "...checking armware_log$15"
+grep -nr "opt" armware_log$15
+echo "...checking armware_log$16"
+grep -nr "opt" armware_log$16
+echo "...checking armware_log$17"
+grep -nr "opt" armware_log$17
+echo "...checking armware_log$18"
+grep -nr "opt" armware_log$18
+echo "...checking armware_log$19"
+grep -nr "opt" armware_log$19

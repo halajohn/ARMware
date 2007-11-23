@@ -1,0 +1,82 @@
+1) 在一個空的目錄下解開 armware-0.1.0.tar.gz
+2) 之後在那個目錄下會有
+
+  drwxr-xr-x   10 wei      wei          4096 2004-07-13 10:29 armware-0.1.0
+  -rw-r--r--    1 wei      wei        165446 2004-07-12 22:08 armware-0.1.0.tar.gz
+
+3) 進入 armware-0.1.0 目錄
+4) 執行 dh_make -e wei.hu.tw@gmail.com -f ../armware-0.1.0.tar.gz
+5) 之後就會產生一個 debian 目錄
+6) 進入 debian 目錄
+7) 修改 control 檔案
+
+Section: non-free/otherosfs
+Priority: extra
+
+8) 修改 copyright 檔案
+9) 複製 manpage.1.ex 為 armware.1, 並修改 armware.1
+10) 修改 rules
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_clean -k 
+	dh_installdirs
+
+	# Add here commands to install the package into debian/armware.
+	$(MAKE) install DESTDIR=$(CURDIR)/debian/armware
+	# Wei 2004-Jul-13:
+	#
+	# I just want to release the stripped final version.
++	rm debian/armware/usr/bin/armware
++	mv debian/armware/usr/bin/armware_opti debian/armware/usr/bin/armware
+
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs 
+	dh_installdocs
+	dh_installexamples
+#	dh_install
+#	dh_installmenu
+#	dh_installdebconf	
+#	dh_installlogrotate
+#	dh_installemacsen
+#	dh_installpam
+#	dh_installmime
+#	dh_installinit
+#	dh_installcron
+#	dh_installinfo
+-	dh_installman
++	dh_installman debian/armware.1
+	dh_link
+	dh_strip
+	dh_compress
+	dh_fixperms
+#	dh_perl
+#	dh_python
+#	dh_makeshlibs
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+11) 回到 armware-0.1.0 目錄
+12) 執行 dpkg-buildpackage -rfakeroot
+
+    NOTE: 如果不要重新 compile, 只要重新 build deb 檔的話, 執行 fakeroot debian/rules binary,
+          但因為這個指令只會重新產生 deb 檔, 所以如果是要產生最後的 deb 檔, 以及 diff, dsc 檔的話,
+          還是要重新執行 dpkg-buildpackage -rfakeroot
+
+13) 則會在上層目錄下產生如下檔案
+
+  drwxr-xr-x   10 wei      wei          4096 2004-07-13 10:29 armware-0.1.0
+  -rw-r--r--    1 wei      wei          7307 2004-07-13 00:17 armware_0.1.0-1.diff.gz
+  -rw-r--r--    1 wei      wei           330 2004-07-13 00:17 armware_0.1.0-1.dsc
+  -rw-r--r--    1 wei      wei           754 2004-07-13 00:37 armware_0.1.0-1_i386.changes
+  -rw-r--r--    1 wei      wei        368200 2004-07-13 01:49 armware_0.1.0-1_i386.deb
+  -rw-r--r--    1 wei      wei        165446 2004-07-12 22:08 armware_0.1.0.orig.tar.gz
+  -rw-r--r--    1 wei      wei        165446 2004-07-12 22:08 armware-0.1.0.tar.gz
+
+14) 可用 lintian -i armware-0.1.0-1_i386.changes 來檢察錯誤.

@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+
+<!--
+
+Process this file with an XSLT processor: `xsltproc \
+-''-nonet /usr/share/sgml/docbook/stylesheet/xsl/nwalsh/\
+manpages/docbook.xsl manpage.dbk'.  A manual page
+<package>.<section> will be generated.  You may view the
+manual page with: nroff -man <package>.<section> | less'.  A
+typical entry in a Makefile or Makefile.am is:
+
+DB2MAN=/usr/share/sgml/docbook/stylesheet/xsl/nwalsh/\
+manpages/docbook.xsl
+XP=xsltproc -''-nonet
+
+manpage.1: manpage.dbk
+        $(XP) $(DB2MAN) $<
+    
+The xsltproc binary is found in the xsltproc package.  The
+XSL files are in docbook-xsl.  Please remember that if you
+create the nroff version in one of the debian/rules file
+targets (such as build), you will need to include xsltproc
+and docbook-xsl in your Build-Depends control field.
+
+-->
+
+  <!-- Fill in your name for FIRSTNAME and SURNAME. -->
+  <!ENTITY dhfirstname "<firstname>Wei</firstname>">
+  <!ENTITY dhsurname   "<surname>Hu</surname>">
+  <!-- Please adjust the date whenever revising the manpage. -->
+  <!ENTITY dhdate      "<date>November 24, 2007</date>">
+  <!-- SECTION should be 1-8, maybe w/ subsection other parameters are
+       allowed: see man(7), man(1). -->
+  <!ENTITY dhsection   "<manvolnum>1</manvolnum>">
+  <!ENTITY dhemail     "<email>wei.hu.tw@gmail.com</email>">
+  <!ENTITY dhusername  "Wei Hu">
+  <!ENTITY dhucpackage "<refentrytitle>ARMWARE</refentrytitle>">
+  <!ENTITY dhpackage   "armware">
+]>
+
+<refentry>
+  <refentryinfo>
+    <address>
+      &dhemail;
+    </address>
+    <copyright>
+      <year>2003</year>
+      <holder>&dhusername;</holder>
+    </copyright>
+    &dhdate;
+  </refentryinfo>
+  <refmeta>
+    &dhucpackage;
+
+    &dhsection;
+  </refmeta>
+  <refnamediv>
+    <refname>&dhpackage;</refname>
+
+    <refpurpose>An ARM Emulator</refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <cmdsynopsis>
+      <command>&dhpackage;</command>
+    </cmdsynopsis>
+  </refsynopsisdiv>
+  
+  <refsect1>
+    <title>COPYRIGHT</title>
+    
+    <para>Copyright 2003-2007 &dhusername; &dhemail;.  All rights reserved.</para>
+  </refsect1>
+  
+  <refsect1>
+    <title>DESCRIPTION</title>
+
+    <para>This manual page documents briefly the
+      <command>&dhpackage;</command> emulator.</para>
+      
+    <para><command>&dhpackage;</command> is an emulator for ARM micro-processor. It can only emulate Intel StrongARM SA-1110 as core for now. However, ARMware emulates not only the Intel StrongARM cpu, but also Compaq iPaq H3600.</para>
+<para>The hardware components that ARMware can emulate are:</para>
+
+<orderedlist>
+<listitem><para>ARM architecture version 4 core</para></listitem>
+<listitem><para>Supports all kinds of ARM instruction set (but does not support Thumb instruction set)</para></listitem>
+
+<listitem><para>Supports all processor mode:</para>
+<itemizedlist>
+<listitem><para>User mode</para></listitem>
+<listitem><para>Fast Interrupt mode</para></listitem>
+<listitem><para>Interrupt mode</para></listitem>
+<listitem><para>Supervisor mode</para></listitem>
+<listitem><para>Abort mode</para></listitem>
+<listitem><para>Undefined Instruction mode</para></listitem>
+<listitem><para>System mode</para></listitem>
+</itemizedlist>
+</listitem>
+
+<listitem><para>ARM standard system coprocessor (CP15)</para></listitem>
+<listitem><para>Memory Management Unit (MMU)</para></listitem>
+
+<listitem><para>Supports all kinds of address translation:</para>
+<itemizedlist>
+<listitem><para>Section translation</para></listitem>
+<listitem><para>Large page translation</para></listitem>
+<listitem><para>Small page translation</para></listitem>
+<listitem><para>Tiny page translation</para></listitem>
+</itemizedlist>
+</listitem>
+
+<listitem><para>Supports all kinds of MMU fault:</para>
+<itemizedlist>
+<listitem><para>Translation fault</para></listitem>
+<listitem><para>Domain fault</para></listitem>
+<listitem><para>Access permission fault</para></listitem>
+<listitem><para>Alignemnt fault</para></listitem>
+</itemizedlist>
+</listitem>
+
+<listitem><para>Translation Lookaside Buffer (TLB)</para>
+<itemizedlist>
+<listitem><para>In order to increase the performance, I use a hash table and fully associated TLB.</para></listitem>
+</itemizedlist>
+</listitem>
+
+<listitem><para>LCD Controller</para></listitem>
+<listitem><para>DMA Controller</para></listitem>
+<listitem><para>EGPIO</para></listitem>
+<listitem><para>Operation System Timer</para></listitem>
+<listitem><para>Reset Controller</para></listitem>
+<listitem><para>Real Time Clock (RTC)</para></listitem>
+<listitem><para>GPIO Controll Block</para></listitem>
+<listitem><para>Interrupt Controller</para></listitem>
+<listitem><para>Power Management</para></listitem>
+<listitem><para>Supports idle mode</para></listitem>
+
+<listitem><para>Serial Port 1</para>
+<itemizedlist>
+<listitem><para>Connects to Atmel micro-controller</para></listitem>
+</itemizedlist>
+</listitem>
+
+<listitem><para>Serial Port 3</para>
+<itemizedlist>
+<listitem><para>Connects to Serial console</para></listitem>
+</itemizedlist>
+</listitem>
+
+<listitem><para>Intel StrataFlash J3 Flash ROM</para>
+<itemizedlist>
+<listitem><para>Fully supports Common Flash Interface (CFI) </para></listitem>
+<listitem><para>Fully supports Write State Machine (WSM), including</para></listitem>
+<itemizedlist>
+<listitem><para>read array</para></listitem>
+<listitem><para>read ID codes</para></listitem>
+<listitem><para>block lock</para></listitem>
+<listitem><para>block unlock</para></listitem>
+<listitem><para>read status register</para></listitem>
+<listitem><para>read block register</para></listitem>
+<listitem><para>byte/word program</para></listitem>
+<listitem><para>write to buffer</para></listitem>
+<listitem><para>block erase</para></listitem>
+</itemizedlist>
+<listitem><para>Using GNU dbm as the ROM file database</para></listitem>
+<listitem><para>Using XML as the ROM file database</para></listitem>
+</itemizedlist>
+</listitem>
+
+<listitem><para>Atmel micro-controller</para></listitem>
+
+<listitem><para>Partially supports, including</para>
+<itemizedlist>
+<listitem><para>Get version information</para></listitem>
+<listitem><para>Get and Set LCD back light</para></listitem>
+</itemizedlist>
+</listitem>
+
+<listitem><para>LCD screen</para>
+<itemizedlist>
+<listitem><para>Using Qt</para></listitem>
+<listitem><para>Using Gtk</para></listitem>
+</itemizedlist>
+</listitem>
+
+<listitem><para>Touch panel</para></listitem>
+</orderedlist>
+
+<refsect1>
+<title>Weak Point</title>
+<orderedlist>
+<listitem><para>Its speed is slow because this version of ARMware is a pure interpreter emulator. However, I am working on how to add a dynamic re-compiler into ARMware, and I hope ARMware will be faster via the dynamic re-compiler. ARMware with a dynamic re-compiler will be released in the next version.</para></listitem>
+<listitem><para>Doesn't support network.</para></listitem>
+<listitem><para>Doesn't support audio.</para></listitem>
+</orderedlist>
+</refsect1>
+
+<refsect1>
+<title>Features</title>
+<orderedlist>
+<listitem><para>Althought ARMware is a pure interpreter emulator, I use assembly codes to re-write parts of it to increase the run-time performance. For example, I use MMX and SSE2 instructions to rotate an angle of 270 degrees of the LCD screen (That is to say, you have to execute ARMware in a CPU with SSE2 instruction sets, like Pentium M or Pentium 4). In addition, I also use assembly codes to accomplish the condition codes setting of ARM.</para></listitem>
+<listitem><para>It can use Qt or Gtk as its user interface. However, because of the liscense of Qt, I could only release the version of ARMware using Gtk as its interface.</para></listitem>
+<listitem><para>It can use GNU dbm or xml as its machine database. However, because of the license of GNU dbm, I could only release the version of ARMware using xml as its machine database.</para></listitem>
+<listitem><para>Conform to the i18n.</para></listitem>
+<listitem><para>Contains a full functional utility to burn a new Flash ROM, which can be used to emulate the burning operations in the real world, and you can use the new created flash rom to start ARMware.</para></listitem>
+<listitem><para>Every user's machine database is placed under their home directory. Thus different users can have different machine database.</para></listitem>
+</orderedlist>
+</refsect1>
+
+</refsect1>
+</refentry>

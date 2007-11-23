@@ -1,0 +1,15 @@
+Main
+MainWindow
+AboutDialog
+MachineListViewWithPopup
+MachineListScrolledWindow
+NewMachineDialog
+ErrorDialog
+SerialConsole
+SoftKeyboard
+MachineScreen
+PrefsDialog
+PartitionTable
+PartitionView
+AdvComboBoxText
+ProgressDialog
