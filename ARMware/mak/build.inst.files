@@ -1,0 +1,10 @@
+InstLSM
+InstLSW
+InstLSH
+InstSWP
+InstDPI
+InstBranch
+InstMulti
+InstMRS
+InstMSR
+Inst

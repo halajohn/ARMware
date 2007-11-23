@@ -1,0 +1,398 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ARMware\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-05-29 23:02+0800\n"
+"PO-Revision-Date: 2004-07-08 14:25+0800\n"
+"Last-Translator: Wei Hu <wei.hu.tw@gmail.com>\n"
+"Language-Team: Tranditional Chinese <wei.hu.tw@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/Gtk/AboutDialog.cpp:45
+msgid "About ARMware"
+msgstr "關於 ARMware"
+
+#: ../src/Gtk/AboutDialog.cpp:56
+msgid "Main Program"
+msgstr "主程式"
+
+#: ../src/Gtk/AboutDialog.cpp:60 ../src/Gtk/AboutDialog.cpp:92
+msgid "Wei Hu"
+msgstr "胡岳偉"
+
+#: ../src/Gtk/AboutDialog.cpp:61 ../src/Gtk/AboutDialog.cpp:93
+msgid "wei.hu.tw@gmail.com"
+msgstr ""
+
+#: ../src/Gtk/AboutDialog.cpp:68
+msgid "Component"
+msgstr "元件"
+
+#: ../src/Gtk/AboutDialog.cpp:69
+msgid "Developer"
+msgstr "開發者"
+
+#: ../src/Gtk/AboutDialog.cpp:70 ../src/Gtk/AboutDialog.cpp:103
+msgid "E-mail"
+msgstr "電子郵件"
+
+#: ../src/Gtk/AboutDialog.cpp:84
+msgid "Traditional Chinese"
+msgstr "繁體中文"
+
+#: ../src/Gtk/AboutDialog.cpp:88
+msgid "Taiwan"
+msgstr "台灣"
+
+#: ../src/Gtk/AboutDialog.cpp:100
+msgid "Language"
+msgstr "語言"
+
+#: ../src/Gtk/AboutDialog.cpp:101
+msgid "Country"
+msgstr "國家"
+
+#: ../src/Gtk/AboutDialog.cpp:102 ../src/Gtk/AboutDialog.cpp:116
+msgid "Translator"
+msgstr "翻譯者"
+
+#: ../src/Gtk/AboutDialog.cpp:115
+msgid "Programmer"
+msgstr "程式設計"
+
+#: ../src/Gtk/ErrorDialog.cpp:32
+msgid "Error"
+msgstr "錯誤"
+
+#: ../src/Gtk/MachineListViewWithPopup.cpp:89
+msgid "Create a new machine"
+msgstr "新增機器"
+
+#: ../src/Gtk/MachineListViewWithPopup.cpp:110
+msgid "Edit an existed machine"
+msgstr "編輯機器組態"
+
+#: ../src/Gtk/MachineListViewWithPopup.cpp:133
+msgid "Do you want to delete %1"
+msgstr "確定要刪除 %1 ?"
+
+#: ../src/Gtk/MachineListViewWithPopup.cpp:182
+msgid "Machine Name"
+msgstr "機器名稱"
+
+#: ../src/Gtk/MachineListViewWithPopup.cpp:186
+msgid "_New"
+msgstr "新增"
+
+#: ../src/Gtk/MachineListViewWithPopup.cpp:190
+msgid "_Edit"
+msgstr "編輯"
+
+#: ../src/Gtk/MachineListViewWithPopup.cpp:194
+msgid "_Delete"
+msgstr "刪除"
+
+#: ../src/Gtk/MainWindow.cpp:61
+msgid "Quit ARMware"
+msgstr "離開 ARMware"
+
+#: ../src/Gtk/MainWindow.cpp:109
+msgid "You have to Select a machine first"
+msgstr "你必須先選擇一台機器"
+
+#: ../src/Gtk/MainWindow.cpp:117
+msgid "Power on the selected machine"
+msgstr "開啟電源"
+
+#: ../src/Gtk/MainWindow.cpp:132
+msgid "Reset the selected machine"
+msgstr "重新啟動"
+
+#: ../src/Gtk/MainWindow.cpp:163
+msgid "Power off the selected machine"
+msgstr "關閉電源"
+
+#: ../src/Gtk/MainWindow.cpp:187
+msgid ""
+"Open a window to show the output from the serial console of the selected "
+"machine"
+msgstr "開啟序列埠輸出視窗"
+
+#: ../src/Gtk/MainWindow.cpp:226 ../src/Gtk/MainWindow.cpp:347
+#: ../src/Gtk/PrefsDialog.cpp:67
+msgid "Show machine list"
+msgstr "顯示機器列表"
+
+#: ../src/Gtk/MainWindow.cpp:261 ../src/Gtk/MainWindow.cpp:384
+#: ../src/Gtk/PrefsDialog.cpp:68
+msgid "Show soft keyboard"
+msgstr "顯示軟體鍵盤"
+
+#: ../src/Gtk/MainWindow.cpp:294
+msgid "Open preference dialog"
+msgstr "開啟偏好設定視窗"
+
+#: ../src/Gtk/MainWindow.cpp:317
+msgid "Information about ARMware"
+msgstr "有關 ARMware 的資訊"
+
+#: ../src/Gtk/MainWindow.cpp:343
+msgid "Hide machine list"
+msgstr "隱藏機器列表"
+
+#: ../src/Gtk/MainWindow.cpp:380
+msgid "Hide soft keyboard"
+msgstr "隱藏軟體鍵盤"
+
+#: ../src/Gtk/MainWindow.cpp:422 ../src/Gtk/MainWindow.cpp:603
+msgid "ARMware"
+msgstr "ARMware"
+
+#: ../src/Gtk/MainWindow.cpp:430
+msgid "_File"
+msgstr "檔案(_F)"
+
+#: ../src/Gtk/MainWindow.cpp:434
+msgid "_Operation"
+msgstr "動作(_O)"
+
+#: ../src/Gtk/MainWindow.cpp:438
+msgid "_Tool"
+msgstr "工具(_T)"
+
+#: ../src/Gtk/MainWindow.cpp:442
+msgid "_Help"
+msgstr "求助(_H)"
+
+#: ../src/Gtk/MainWindow.cpp:449
+msgid "Quit"
+msgstr "離開"
+
+#: ../src/Gtk/MainWindow.cpp:461 ../src/Gtk/MainWindow.cpp:571
+msgid "Power On"
+msgstr "啟動"
+
+#: ../src/Gtk/MainWindow.cpp:475 ../src/Gtk/MainWindow.cpp:572
+msgid "Reset"
+msgstr "重置"
+
+#: ../src/Gtk/MainWindow.cpp:489 ../src/Gtk/MainWindow.cpp:573
+msgid "Power Off"
+msgstr "關機"
+
+#: ../src/Gtk/MainWindow.cpp:509
+msgid "Open Serial Console Output Window"
+msgstr "開啟序列埠終端機輸出視窗"
+
+#: ../src/Gtk/MainWindow.cpp:522
+msgid "Show Machine List"
+msgstr "顯示機器列表"
+
+#: ../src/Gtk/MainWindow.cpp:532
+msgid "Show Soft Keyboard"
+msgstr "顯示軟體鍵盤"
+
+#: ../src/Gtk/MainWindow.cpp:544 ../src/Gtk/PrefsDialog.cpp:70
+msgid "Preference"
+msgstr "偏好設定"
+
+#: ../src/Gtk/MainWindow.cpp:558
+msgid "About"
+msgstr "關於"
+
+#: ../src/Gtk/MainWindow.cpp:604
+msgid "A virtual machine for embedded system"
+msgstr "針對嵌入式系統而設計的模擬器"
+
+#: ../src/Gtk/MainWindow.cpp:605
+msgid "Version 0.4"
+msgstr "版本 0.4"
+
+#: ../src/Gtk/NewMachineDialog.cpp:49
+msgid "Please choose a file"
+msgstr "請選擇一個檔案"
+
+#: ../src/Gtk/NewMachineDialog.cpp:83
+msgid "%1: You haven't specify a machine name yet."
+msgstr "%1: 你還沒有指定機器名稱."
+
+#: ../src/Gtk/NewMachineDialog.cpp:89 ../src/Gtk/PartitionTable.cpp:333
+msgid "%1: You haven't specify a flash ROM file yet."
+msgstr "%1: 你還沒有指定一個 Flash ROM 映像檔."
+
+#: ../src/Gtk/NewMachineDialog.cpp:100 ../src/Gtk/PartitionTable.cpp:342
+msgid "%1: You specify a directory (%2) as the flash ROM file."
+msgstr "%1: 你指定了一個目錄 (%2) 為 Flash ROM 映像檔."
+
+#: ../src/Gtk/NewMachineDialog.cpp:106
+msgid "%1: Flash ROM file '%2' not found."
+msgstr "%1: 找不到指定的 Flash ROM 映像檔: %2"
+
+#: ../src/Gtk/NewMachineDialog.cpp:134
+msgid "You specify an existed machine name: %1"
+msgstr "你指定了一個已經存在的機器名稱: %1"
+
+#: ../src/Gtk/NewMachineDialog.cpp:205
+msgid "Machine Name: "
+msgstr "機器名稱: "
+
+#: ../src/Gtk/NewMachineDialog.cpp:216
+msgid "Flash ROM File: "
+msgstr "Flash ROM 映像檔"
+
+#: ../src/Gtk/NewMachineDialog.cpp:217
+msgid "Flash ROM Size: "
+msgstr "Flash ROM 容量"
+
+#: ../src/Gtk/NewMachineDialog.cpp:222 ../src/Gtk/PartitionTable.cpp:237
+msgid "GByte"
+msgstr "GByte"
+
+#: ../src/Gtk/NewMachineDialog.cpp:223 ../src/Gtk/PartitionTable.cpp:238
+msgid "MByte"
+msgstr "MByte"
+
+#: ../src/Gtk/NewMachineDialog.cpp:224 ../src/Gtk/PartitionTable.cpp:239
+msgid "KByte"
+msgstr "KByte"
+
+#: ../src/Gtk/NewMachineDialog.cpp:225 ../src/Gtk/PartitionTable.cpp:240
+msgid "Byte"
+msgstr "Byte"
+
+#: ../src/Gtk/NewMachineDialog.cpp:245
+msgid "Burning New Flash ROM"
+msgstr "燒錄新的 Flash ROM"
+
+#: ../src/Gtk/NewMachineDialog.cpp:254
+msgid "Width: "
+msgstr "寬度: "
+
+#: ../src/Gtk/NewMachineDialog.cpp:255
+msgid "Height: "
+msgstr "高度: "
+
+#: ../src/Gtk/NewMachineDialog.cpp:277
+msgid "Basic Information"
+msgstr "基本資訊"
+
+#: ../src/Gtk/NewMachineDialog.cpp:278
+msgid "Flash ROM"
+msgstr "Flash ROM"
+
+#: ../src/Gtk/NewMachineDialog.cpp:279
+msgid "Screen Size"
+msgstr "螢幕大小"
+
+#: ../src/Gtk/PartitionTable.cpp:74
+msgid "%1: Starting address isn't a valid hexadecimal number."
+msgstr "%1: 起始位址必須要是一個 16 進位的數字."
+
+#: ../src/Gtk/PartitionTable.cpp:82
+msgid "%1: Partition size shouldn't be 0."
+msgstr "%1: 分割區的大小不應該為 0."
+
+#: ../src/Gtk/PartitionTable.cpp:89
+msgid "%1: You haven't specify the unit yet."
+msgstr "%1: 你還沒有指定容量所使用的單位."
+
+#: ../src/Gtk/PartitionTable.cpp:96
+msgid "%1: You haven't specify a image file yet."
+msgstr "%1: 你還沒有指定分割區所使用的映像檔."
+
+#: ../src/Gtk/PartitionTable.cpp:132
+msgid "%1: The image file size is larger than the partition size."
+msgstr "%1: 指定的映像檔大小比分割區的容量還要大."
+
+#: ../src/Gtk/PartitionTable.cpp:191
+msgid "Burn"
+msgstr "開始燒錄"
+
+#: ../src/Gtk/PartitionTable.cpp:192
+msgid "Add"
+msgstr "新增"
+
+#: ../src/Gtk/PartitionTable.cpp:193
+msgid "Delete"
+msgstr "刪除"
+
+#: ../src/Gtk/PartitionTable.cpp:194
+msgid "Modify"
+msgstr "修改"
+
+#: ../src/Gtk/PartitionTable.cpp:219 ../src/Gtk/PartitionView.cpp:125
+msgid "Starting Address"
+msgstr "起始位址"
+
+#: ../src/Gtk/PartitionTable.cpp:221 ../src/Gtk/PartitionView.cpp:128
+msgid "Partition Size"
+msgstr "分割區大小"
+
+#: ../src/Gtk/PartitionTable.cpp:223 ../src/Gtk/PartitionView.cpp:140
+msgid "Partition Image File"
+msgstr "分割區映像檔"
+
+#: ../src/Gtk/PartitionTable.cpp:296
+msgid "Select an image file for a partition"
+msgstr "替分割區選擇一個映像檔"
+
+#: ../src/Gtk/PartitionTable.cpp:327
+msgid "%1: You haven't specify any image files yet."
+msgstr "%1: 你還沒有指定任何的映像檔."
+
+#: ../src/Gtk/PartitionTable.cpp:354
+msgid "%1: Flash ROM file size shouldn't be 0."
+msgstr "%1: Flash ROM 映像檔的容量不應該是 0."
+
+#: ../src/Gtk/PartitionTable.cpp:361
+msgid "%1: You haven't specify the unit used for flash ROM file yet."
+msgstr "%1: 你還沒有指定 Flash ROM 映像檔所使用的容量單位."
+
+#: ../src/Gtk/PartitionTable.cpp:390
+msgid "%1: The image file (%2) size is larger than that of the flash ROM file."
+msgstr "%1: 映像檔 (%2) 的大小比 Flash ROM 映像檔的容量還要大."
+
+#: ../src/Gtk/PartitionTable.cpp:406
+msgid ""
+"%1 doesn't exist.\n"
+"Do you want me to create it for you?"
+msgstr "%1 不存在.\\n需要現在創造它嗎?"
+
+#: ../src/Gtk/PartitionView.cpp:231
+msgid "Burning Flash ROM"
+msgstr "燒錄 Flash ROM"
+
+#: ../src/Gtk/PartitionView.cpp:297
+msgid "Burning %1 done."
+msgstr "燒錄 %1 完成."
+
+#: ../src/Gtk/PrefsDialog.cpp:66
+msgid "Open serial console"
+msgstr "開啟序列埠輸出視窗"
+
+#: ../src/Gtk/PrefsDialog.cpp:81
+msgid "Display"
+msgstr "顯示"
+
+#: ../src/Gtk/PrefsDialog.cpp:83
+msgid "When ARMware starts..."
+msgstr "當 ARMware 啟動時"
+
+#: ../src/Gtk/SerialConsole.cpp:47
+msgid "Serial Console"
+msgstr "序列埠輸出視窗"
+
+#: ../src/Gtk/SerialConsole.cpp:49
+msgid "Input here: "
+msgstr "輸入: "
+
+#: ../src/Gtk/SoftKeyboard.cpp:39
+msgid "Action"
+msgstr "Action"
