@@ -1,3 +1,5 @@
+==================================================================
+
 The libraries need by ARMware are:
 
   * Wei Common Library (http://code.google.com/p/wei-common-library/)
@@ -27,3 +29,37 @@ Recommends version 0.14 or any later version.
 Linux: Use the install package from your distribution.
 
 Win32: http://gnuwin32.sourceforge.net/packages/gettext.htm
+
+==================================================================
+
+ARMware 會使用到的 library 有:
+
+1) Wei Common Library (http://code.google.com/p/wei-common-library/
+
+這個 library 只有在 win32 下才有需要
+
+2) Gtk
+
+建議使用 2.10 以後的版本
+
+Linux: Use the install package from your distribution.
+
+Win32: http://gladewin32.sourceforge.net/
+
+3) Gtkmm
+
+建議使用 2.10 以後的版本
+
+Linux: Use the install package from your distribution.
+
+Win32: http://ftp.gnome.org/pub/gnome/binaries/win32/gtkmm/
+
+4) gettext
+
+建議使用 0.14 以後的版本
+
+Linux: Use the install package from your distribution.
+
+Win32: http://gnuwin32.sourceforge.net/packages/gettext.htm
+
+==================================================================
