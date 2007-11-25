@@ -2,7 +2,7 @@ Source: armware
 Section: devel
 Priority: extra
 Maintainer: Wei Hu <wei.hu.tw@gmail.com>
-Build-Depends: debhelper (>= 4.0.0)
+Build-Depends: debhelper (>= 4.0.0), libgtkmm-2.4-dev, libxml++2.6-dev
 Standards-Version: 3.6.0
 
 Package: armware
