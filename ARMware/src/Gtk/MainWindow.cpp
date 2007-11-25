@@ -251,6 +251,11 @@ namespace ARMware
   void
   MainWindow::OnMenuItemToolShowSoftKeyboard()
   {
+    if (0 == mMachineListScrolledWindow.SelectedMachine())
+    {
+      return;
+    }
+    
     if (false == m_soft_keyboard.is_visible())
     {
       m_soft_keyboard.show();
