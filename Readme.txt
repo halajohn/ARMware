@@ -1,4 +1,4 @@
 This is an ARM emulator.
 
-Project page: http://code.google.com/p/armware/
+Project page: https://github.com/Halajohn/ARMware
 Project discussion group: http://groups.google.com/group/armware
