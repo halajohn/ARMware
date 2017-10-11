@@ -247,8 +247,8 @@ Terminal
 
 # Movies
 
-[Booting process (Enabled the threaded code engine & dynamic compiler) (divx4)](http://armware.googlecode.com/files/start.avi)
-[Input commands to serial console (Enable the threaded code engine & dynamic compiler) (divx4)](http://armware.googlecode.com/files/input.avi)
-[Calibrate the touch panel (Disabled the threaded code engine & dynamic compiler) (divx4)](http://armware.googlecode.com/files/calibrate.avi)
-[Input personal information (Disabled the threaded code engine & dynamic compiler) (divx4)](http://armware.googlecode.com/files/personal.avi)
-[Tetris game (Disabled the threaded code engine & dynamic compiler) (divx4)](http://armware.googlecode.com/files/tetris.avi)
+[Booting process (Enabled the threaded code engine & dynamic compiler) (divx4)](http://armware.googlecode.com/files/start.avi)  
+[Input commands to serial console (Enable the threaded code engine & dynamic compiler) (divx4)](http://armware.googlecode.com/files/input.avi)  
+[Calibrate the touch panel (Disabled the threaded code engine & dynamic compiler) (divx4)](http://armware.googlecode.com/files/calibrate.avi)  
+[Input personal information (Disabled the threaded code engine & dynamic compiler) (divx4)](http://armware.googlecode.com/files/personal.avi)  
+[Tetris game (Disabled the threaded code engine & dynamic compiler) (divx4)](http://armware.googlecode.com/files/tetris.avi)  
